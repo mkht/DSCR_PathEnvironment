@@ -1,0 +1,8 @@
+
+[ClassVersion("1.0.0.0"), FriendlyName("cPath")]
+class cPath : OMI_BaseResource
+{
+    [Write, ValueMap{"Present","Absent"}, Values{"Present","Absent"}] String Ensure;
+    [Key] String Value;
+    [Write, ValueMap{"Machine","User"}, Values{"Machine","User"}] String Target;
+};
